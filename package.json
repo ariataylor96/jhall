@@ -1,0 +1,32 @@
+{
+  "name": "jhall",
+  "version": "1.0.0",
+  "description": "Generate configuration files using Javascript",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "author": "Mark Rawls <markrawls96@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublishOnly": "yarn run build",
+    "start": "yarn build && node lib/index.js",
+    "dev": "babel-node src/index.js",
+    "lint": "pretty-quick --check src/"
+  },
+  "bin": {
+    "jhall": "./lib/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "dependencies": {
+    "json-stringify-pretty-compact": "^2.0.0",
+    "yaml": "^1.9.2",
+    "yargs": "^15.3.1"
+  }
+}
