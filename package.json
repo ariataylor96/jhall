@@ -1,6 +1,6 @@
 {
   "name": "jhall",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate configuration files using Javascript",
   "main": "lib/index.js",
   "module": "src/index.js",
