@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "module": "src/index.js",
   "author": "Mark Rawls <markrawls96@gmail.com>",
+  "repository": "github:markrawls/jhall",
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir lib",
